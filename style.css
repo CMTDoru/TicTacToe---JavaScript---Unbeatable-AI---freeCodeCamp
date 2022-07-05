@@ -4,7 +4,7 @@ td {
     width: 100px;
     text-align: center;
     vertical-align: middle;
-    font-family: "Comic Sans Ms", cursive;
+    font-family: "Comic Sans Ms", Arial, Helvetica, sans-serif, cursive;
     font-size: 70px;
     cursor: pointer;
 }

@@ -96,9 +96,9 @@ function checkTie() {
 }
 
 function minmax(newBoard, player) {
-    var availSpots = emptySquares(newBoard)
+    var availSpots = emptySquares()
 
-    if(checkWin(newBoard, player)) {
+    if(checkWin(newBoard, huPlayer)) {
         return {score: -10}
     }else if (checkWin(newBoard, aiPlayer)) {
         return {score: 10} 
@@ -123,6 +123,7 @@ function minmax(newBoard, player) {
 
         moves.push(move)
     }
+
     var bestMove
     if(player === aiPlayer) {
         var bestScore = -10000;
@@ -143,4 +144,3 @@ function minmax(newBoard, player) {
     }
     return moves[bestMove]
 }
-
